@@ -18,13 +18,10 @@ public class ScannerCountCopy {
 			 mAmount = scanner.nextInt();
 			 mSum += mAmount;
 		
-			 System.out.println("Name: " + mCustomer +" " + "Amount: "+mAmount);
-		 }
-	}
-		catch (FileNotFoundException e) {
+			 System.out.println("Name: " + mCustomer +" " + "Amount: "+mAmount);}
+	}catch (FileNotFoundException e) {
 				e.printStackTrace();
-		} 
-	finally{
+	}finally{
 			scanner.close();
 	}
 	System.out.println("Total: " + mSum);
